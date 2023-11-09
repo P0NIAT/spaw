@@ -7,7 +7,7 @@
 }
 
 html {
-	scroll-padding-top: 100px;
+	scroll-padding-top: 65px;
 	scroll-behavior: smooth;
 	margin: 0 auto;
 	max-width: 1680px;
@@ -16,6 +16,55 @@ html {
 
 body {
 	font-family: 'Work Sans', sans-serif;
+}
+
+.underline {
+	margin: 0 auto 40px;
+	width: 100px;
+	height: 4px;
+	background-color: $main-color;
+}
+
+.portfolio {
+
+	margin-bottom: 2em;
+	.carousel-item {
+		position: relative;
+		// margin: 0 auto;
+		// width: 100vh;
+	}
+}
+
+.achievement-number {
+	font-size: 3.6rem;
+}
+
+.carousel-caption {
+	position: absolute;
+	left: 0;
+	right: 0;
+	padding: 30px 0;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.carousel-indicators {
+	padding-bottom: 20px;
+}
+
+.carousel-control-next-icon, 
+.carousel-control-prev-icon {
+	width: 8rem;
+	height: 8rem;
+	color: #e2da00;
+}
+
+.card-title {
+	font-size: 2rem;
+}
+
+.card-text {
+	font-size: 2rem;
+	padding-bottom: 20px;
 }
 
 .text {
@@ -106,6 +155,9 @@ body {
 		height: 65px;
 		width: 100%;
 		background-color: #fff;
+		border-bottom: 3px #e2da00;
+		z-index: 1;
+		
 
 
 		&--link-box {
@@ -325,8 +377,10 @@ body {
 	}
 
 	&__title {
-		margin: 0.75em 0;
+		margin: 0.25em 0;
 		font-size: 4.4rem;
+		text-transform: uppercase;
+		text-align: center;
 	}
 
 	&__cart {
@@ -446,21 +500,23 @@ body {
 
 // REVIEWS
 
-@media (max-width: 767px) {
+// @media (max-width: 767px) {
 	.reviews.section-padding {
 		padding: 4em 0;
 	}
-}
+// }
 
-.carts__title {
-	padding-left: 1em;
-}
+// .carts__title {
+// 	padding-left: 1em;
+// }
 
 .reviews {
+	background-color: #ededed;
 	&__box {
 		position: relative;
-		margin: 3em;
+		margin: 5em;
 		padding: 2em;
+		background-color: #fff;
 		border-radius: 8px;
 		box-shadow: 3px 3px 10px #2e2e2e2e;
 		transition: transform 0.3s;
@@ -522,7 +578,7 @@ body {
 
 	&__box-title {
 		text-align: center;
-		margin-bottom: 1em;
+		// margin-bottom: 1em;
 		font-size: 4.4rem;
 		// text-transform: uppercase;
 	}
@@ -708,9 +764,10 @@ body {
 @media (min-width: 992px) {
 	html {
 		font-size: 47%;
+		scroll-padding-top: 80px;
 	}
 	nav {
-		height: 82px;
+		height: 83px;
 	}
 	.nav {
 		&__mobile {

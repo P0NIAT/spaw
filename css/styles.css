@@ -6,7 +6,7 @@
 }
 
 html {
-  scroll-padding-top: 100px;
+  scroll-padding-top: 65px;
   scroll-behavior: smooth;
   margin: 0 auto;
   max-width: 1680px;
@@ -15,6 +15,52 @@ html {
 
 body {
   font-family: "Work Sans", sans-serif;
+}
+
+.underline {
+  margin: 0 auto 40px;
+  width: 100px;
+  height: 4px;
+  background-color: #e2da00;
+}
+
+.portfolio {
+  margin-bottom: 2em;
+}
+.portfolio .carousel-item {
+  position: relative;
+}
+
+.achievement-number {
+  font-size: 3.6rem;
+}
+
+.carousel-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 30px 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.carousel-indicators {
+  padding-bottom: 20px;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  width: 8rem;
+  height: 8rem;
+  color: #e2da00;
+}
+
+.card-title {
+  font-size: 2rem;
+}
+
+.card-text {
+  font-size: 2rem;
+  padding-bottom: 20px;
 }
 
 .text {
@@ -124,6 +170,8 @@ body {
   height: 65px;
   width: 100%;
   background-color: #fff;
+  border-bottom: 3px #e2da00;
+  z-index: 1;
 }
 .nav__mobile--link-box {
   cursor: pointer;
@@ -411,8 +459,10 @@ body {
   padding: 3em 3em 6em;
 }
 .carts__title {
-  margin: 0.75em 0;
+  margin: 0.25em 0;
   font-size: 4.4rem;
+  text-transform: uppercase;
+  text-align: center;
 }
 .carts__cart {
   margin: 10px;
@@ -541,19 +591,18 @@ body {
   width: 49%;
 }
 
-@media (max-width: 767px) {
-  .reviews.section-padding {
-    padding: 4em 0;
-  }
-}
-.carts__title {
-  padding-left: 1em;
+.reviews.section-padding {
+  padding: 4em 0;
 }
 
+.reviews {
+  background-color: #ededed;
+}
 .reviews__box {
   position: relative;
-  margin: 3em;
+  margin: 5em;
   padding: 2em;
+  background-color: #fff;
   border-radius: 8px;
   -webkit-box-shadow: 3px 3px 10px rgba(46, 46, 46, 0.1803921569);
           box-shadow: 3px 3px 10px rgba(46, 46, 46, 0.1803921569);
@@ -610,7 +659,6 @@ body {
 }
 .footer__box-title {
   text-align: center;
-  margin-bottom: 1em;
   font-size: 4.4rem;
 }
 .footer__box-social {
@@ -778,9 +826,10 @@ body {
 @media (min-width: 992px) {
   html {
     font-size: 47%;
+    scroll-padding-top: 80px;
   }
   nav {
-    height: 82px;
+    height: 83px;
   }
   .nav__mobile {
     display: none;

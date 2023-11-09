@@ -20,10 +20,10 @@
 			rel="stylesheet"
 		/>
 		<link
-			rel="stylesheet"
-			type="text/css"
-			href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-		/>
+		rel="stylesheet"
+		type="text/css"
+		href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+	/>
 		<script
 			src="https://kit.fontawesome.com/d2c05d57a0.js"
 			crossorigin="anonymous"
@@ -39,15 +39,17 @@
 						<img src="./img/logo_black.jpg" />
 					</div>
 						<div class="nav__desktop--right">
-							<a class="nav__desktop--link" href="#new_cars"
+							<a class="nav__desktop--link" href="#ofer"
 								>Nasza oferta</a>
-							<a class="nav__desktop--link" href="#used_cars"
+							<a class="nav__desktop--link" href="#what"
 								>Co spawamy?</a>
-							<a class="nav__desktop--link" href="#service"
+							<a class="nav__desktop--link" href="#tech"
 								>Technologie</a>
-							<a class="nav__desktop--link" href="#commercials"
+							<a class="nav__desktop--link" href="#portfolio"
+								>Galeria</a>
+							<a class="nav__desktop--link" href="#reviews"
 								>Opinie</a>
-							<a class="nav__desktop--link" href="#mobilty">Kontakt</a>
+							<a class="nav__desktop--link" href="#contact">Kontakt</a>
 						</div>
 					</div>
 				</div>
@@ -99,10 +101,11 @@
 			</nav>
 
 			<nav class="nav__mob">
-				<a class="nav__mob-link nav__active" href="#home">Nasza oferta</a>
-				<a class="nav__mob-link" href="#stack">Co spawamy?</a>
-				<a class="nav__mob-link" href="#projects">Technologie</a>
-				<a class="nav__mob-link" href="#react">Opinie</a>
+				<a class="nav__mob-link nav__active" href="#ofer">Nasza oferta</a>
+				<a class="nav__mob-link" href="#what">Co spawamy?</a>
+				<a class="nav__mob-link" href="#tech">Technologie</a>
+				<a class="nav__mob-link" href="#portfolio">Galeria</a>
+				<a class="nav__mob-link" href="#reviews">Opinie</a>
 				<a class="nav__mob-link" href="#contact">Kontakt</a>
 			</nav>
 
@@ -122,9 +125,10 @@
 				</div>
 			</header>
 
-			<section class="carts__section">
+			<section class="carts__section py-5" id="ofer">
 				<div class="wrapper">
 					<h2 class="carts__title">Nasza oferta</h2>
+					<div class="underline"></div>
 
 					<div class="carts">
 						<div class="carts__cart">
@@ -159,7 +163,7 @@
 						<div class="carts__cart">
 							<img
 								class="carts__cart--img"
-								src="./assets/img/galery/20231003_073941.jpg"
+								src="./img/3.jpg"
 								alt="Black BMW i4 on the white background."
 							/>
 							<div class="carts__cart--text">
@@ -240,7 +244,7 @@
 				</div>
 			</section>
 
-			<section class="explore__section">
+			<section class="explore__section" id="what">
 				<div class="wrapper">
 					<div class="explore">
 						<img
@@ -264,7 +268,7 @@
 				</div>
 			</section>
 
-			<section class="electric__section">
+			<section class="electric__section" id="tech">
 				<div class="wrapper">
 					<div class="electric">
 						<img
@@ -279,7 +283,7 @@
 							<ul>
 								<li><p>Spawanie TIG (Tungsten Inert Gas)</p></li>
 								<li><p>Spawanie MIG (Metal Inert Gas)</p></li>
-								<li><p>Spawanie łukowe:</p></li>
+								<!-- <li><p>Spawanie łukowe:</p></li> -->
 								<li><p>Spawanie na gorąco:</p></li>
 							</ul>
 							<a class="btn" href="tel:+48531708465">Zadzwoń!</a>
@@ -287,12 +291,361 @@
 					</div>
 				</div>
 			</section>
+
+			<section id="portfolio" class="portfolio py-5 section">
+				<div class="wrapper">
+
+				<h2 class="carts__title">Galeria</h2>
+				<div class="underline"></div>
+				<div class="wrapper">
+					<!-- PORFOLIO NA MOBILE -->
+
+					<div class="card-group d-sm-none">
+						<div class="wrapper">
+						<div class="card me-sm-3">
+							<img
+								src="./img/1.jpg"
+								class="card-img-top"
+								alt="Kominek z szybą panoramiczną w nowoczesnej zabudowie."
+							/>
+							<div class="card-body">
+								<p class="achievement-number">Szuflada kominkowa</p>
+								<p class="card-text">
+									Element z blachy czarnej pomalowany farbą żaroodporną.
+								</p>
+							</div>
+						</div>
+						<div class="card">
+							<img
+								src="./img/2.JPG"
+								class="card-img-top"
+								alt="Kominek z wkładem obłożony kamieniem łupanym."
+							/>
+							<div class="card-body">
+								<p class="achievement-number">Piec z dopalaczami gazu</p>
+								<p class="card-text">
+									Pozwala zaoszczędzić na ogrzewaniu, dzięki bardzo wydajnej pracy.
+								</p>
+							</div>
+						</div>
+						<div class="card">
+							<img
+								src="./img/3.JPG"
+								class="card-img-top"
+								alt="Kominek w angielskim stylu, wykończony piaskowiecem."
+							/>
+							<div class="card-body">
+								<p class="achievement-number" >Radiator kominkowy</p>
+								<p class="card-text">
+									Pomaga odzyskać około 30% dodatkowej energii.
+								</p>
+							</div>
+						</div>
+						<div class="card">
+							<img
+								src="./img/4.jpg"
+								class="card-img-top"
+								alt="Połączenie kominka z piecem kaflowym - zielone kafle."
+							/>
+							<div class="card-body">
+								<p class="achievement-number" >Czopuch w kominku tradycyjnym</p>
+								<p class="card-text">
+									Poprawił ciąg i wyeliminował dym trafiający do pomieszczenia.
+								</p>
+							</div>
+						</div>
+						<div class="card">
+							<img
+								src="./img/5.jpg"
+								class="card-img-top"
+								alt="Połączenie kominka z piecem kaflowym - kremowe kafle."
+							/>
+							<div class="card-body">
+								<p class="achievement-number">Kuchania tradycyjna</p>
+								<p class="card-text">Elementy przygotowane pod potrzeby klienta.</p>
+							</div>
+						</div>
+						<div class="card">
+							<img
+								src="./img/6.JPG"
+								class="card-img-top"
+								alt="Kominek z wkładem, półki z kamienia."
+							/>
+							<div class="card-body">
+								<p class="achievement-number">Mocowanie tłumika</p>
+								<p class="card-text">Do zabytkowych i sportowych modeli samochodów.</p>
+							</div>
+						</div>
+						<div class="card">
+							<img
+								src="./img/7.JPG"
+								class="card-img-top"
+								alt="Kominek z wkładem z dodatkową szybą boczną."
+							/>
+							<div class="card-body">
+								<p class="achievement-number">Customowy układ wydechowy</p>
+								<p class="card-text">
+									Przygotowany i dostosowany do konkretnego modelu pojazdu.
+								</p>
+							</div>
+						</div>
+						<div class="card">
+							<img
+								src="./img/8.JPG"
+								class="card-img-top"
+								alt="Koza kominkowa - rozwiązanie, które zyskuje na
+								popularności."
+							/>
+							<div class="card-body">
+								<p class="achievement-number">
+									Squat rack z akcesoriami
+								</p>
+								<p class="card-text">
+									Dopasowane do potrzeb twojej siłowni.
+								</p>
+							</div>
+						</div>
+						<div class="card">
+							<img
+								src="./img/9.JPG"
+								class="card-img-top"
+								alt="Koza kominkowa - rozwiązanie, które zyskuje na
+								popularności."
+							/>
+							<div class="card-body">
+								<p class="achievement-number">
+									Stojak na ciężary
+								</p>
+								<p class="card-text">
+									Maksymalne obciążenie do 400kg.
+								</p>
+							</div>
+						</div>
+					</div>
+					</div>
+					<!-- PORFOLIO NA DESKTOP -->
+					<div
+						id="carouselExampleCaptions"
+						class="carousel slide d-none d-sm-block"
+						data-bs-ride="false"
+					>
+						<div class="carousel-indicators">
+							<button
+								type="button"
+								data-bs-target="#carouselExampleCaptions"
+								data-bs-slide-to="0"
+								class="active"
+								aria-current="true"
+								aria-label="Slide 1"
+							></button>
+							<button
+								type="button"
+								data-bs-target="#carouselExampleCaptions"
+								data-bs-slide-to="1"
+								aria-label="Slide 2"
+							></button>
+							<button
+								type="button"
+								data-bs-target="#carouselExampleCaptions"
+								data-bs-slide-to="2"
+								aria-label="Slide 3"
+							></button>
+							<button
+								type="button"
+								data-bs-target="#carouselExampleCaptions"
+								data-bs-slide-to="3"
+								aria-label="Slide 4"
+							></button>
+							<button
+								type="button"
+								data-bs-target="#carouselExampleCaptions"
+								data-bs-slide-to="4"
+								aria-label="Slide 5"
+							></button>
+							<button
+								type="button"
+								data-bs-target="#carouselExampleCaptions"
+								data-bs-slide-to="5"
+								aria-label="Slide 6"
+							></button>
+							<button
+								type="button"
+								data-bs-target="#carouselExampleCaptions"
+								data-bs-slide-to="6"
+								aria-label="Slide 7"
+							></button>
+							<button
+								type="button"
+								data-bs-target="#carouselExampleCaptions"
+								data-bs-slide-to="7"
+								aria-label="Slide 8"
+							></button>
+							<button
+								type="button"
+								data-bs-target="#carouselExampleCaptions"
+								data-bs-slide-to="8"
+								aria-label="Slide 9"
+							></button>
+						</div>
+						<div class="carousel-inner">
+							<div class="carousel-item portfolio-img active">
+								<div class="d-flex justify-content-center">
+									<img
+										src="./img/1.jpg"
+										class="d-block w-100"
+										alt="Kominek z wkładem w nowoczesnej zabudowie."
+									/>
+								</div>
+								<div class="carousel-caption d-none d-sm-block">
+									<p class="achievement-number">Szuflada kominkowa</p>
+									<p class="card-text">
+										Element z blachy czarnej pomalowany farbą żaroodporną.
+									</p>
+								</div>
+							</div>
+
+							<div class="carousel-item portfolio-img">
+								<img
+									src="./img/2.JPG"
+									class="d-block w-100"
+									alt="Tradycyjny kominek z wkładem."
+								/>
+								<div class="carousel-caption d-none d-sm-block">
+									<p class="achievement-number">Piec z dopalaczami gazu</p>
+									<p class="card-text">
+										Pozwala zaoszczędzić na ogrzewaniu, dzięki bardzo wydajnej pracy.
+									</p>
+								</div>
+							</div>
+							<div class="carousel-item portfolio-img">
+								<img
+									src="./img/3.JPG"
+									class="d-block w-100"
+									alt="Tradycyjny kominek w angielskim stylu."
+								/>
+								<div class="carousel-caption d-none d-sm-block">
+									<p class="achievement-number" >Radiator kominkowy</p>
+								<p class="card-text">
+									Pomaga odzyskać około 30% dodatkowej energii.
+								</p>
+								</div>
+							</div>
+							<div class="carousel-item portfolio-img">
+								<img
+									src="./img/4.jpg"
+									class="d-block w-100"
+									alt="Tradycyjny kominek z kafli."
+								/>
+								<div class="carousel-caption d-none d-sm-block">
+									<p class="achievement-number" >Czopuch w kominku tradycyjnym</p>
+								<p class="card-text">
+									Poprawił ciąg i wyeliminował dym trafiający do pomieszczenia.
+								</p>
+								</div>
+							</div>
+							<div class="carousel-item portfolio-img">
+								<img
+									src="./img/5.jpg"
+									class="d-block w-100"
+									alt="Tradycyjny kominek z kafli."
+								/>
+								<div class="carousel-caption d-none d-sm-block">
+									<p class="achievement-number">Kuchania tradycyjna</p>
+								<p class="card-text">Elementy przygotowane pod potrzeby klienta.</p>
+								</div>
+							</div>
+							<div class="carousel-item portfolio-img">
+								<img
+									src="./img/6.JPG"
+									class="d-block w-100"
+									alt="Kominek z wkładem w nowoczesnej zabudowie."
+								/>
+								<div class="carousel-caption d-none d-sm-block">
+									<p class="achievement-number">Mocowanie tłumika</p>
+									<p class="card-text">Do zabytkowych i sportowych modeli samochodów.</p>
+								</div>
+							</div>
+							<div class="carousel-item portfolio-img">
+								<img
+									src="./img/7.JPG"
+									class="d-block w-100"
+									alt="Kominek z wkładem z szybą boczną."
+								/>
+								<div class="carousel-caption d-none d-sm-block">
+									<p class="achievement-number">Customowy układ wydechowy</p>
+									<p class="card-text">
+										Przygotowany i dostosowany do konkretnego modelu pojazdu.
+									</p>
+								</div>
+							</div>
+							<div class="carousel-item portfolio-img">
+								<img
+									src="./img/8.JPG"
+									class="d-block w-100"
+									alt="Kominek koza."
+								/>
+								<div class="carousel-caption d-none d-sm-block">
+									<p class="achievement-number">
+										Squat rack z akcesoriami
+									</p>
+									<p class="card-text">
+										Dopasowane do potrzeb twojej siłowni.
+									</p>
+								</div>
+							</div>
+							<div class="carousel-item portfolio-img">
+								<img
+									src="./img/9.JPG"
+									class="d-block w-100"
+									alt="Kominek koza."
+								/>
+								<div class="carousel-caption d-none d-sm-block">
+									<p class="achievement-number">
+										Stojak na ciężary
+									</p>
+									<p class="card-text">
+										Maksymalne obciążenie do 400kg.
+									</p>
+								</div>
+							</div>
+						</div>
+						<button
+							class="carousel-control-prev"
+							type="button"
+							data-bs-target="#carouselExampleCaptions"
+							data-bs-slide="prev"
+						>
+							<span
+								class="carousel-control-prev-icon"
+								aria-hidden="true"
+							></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button
+							class="carousel-control-next"
+							type="button"
+							data-bs-target="#carouselExampleCaptions"
+							data-bs-slide="next"
+						>
+							<span
+								class="carousel-control-next-icon"
+								aria-hidden="true"
+							></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+				</div>
+									
+			</div>
+			</section>
+
 			<section
 				class="reviews section-padding section white-section"
 				id="reviews"
 			>
 			<div class="wrapper">
 				<h2 class="carts__title">Opinie klientów</h2>
+				<div class="underline"></div>
 				<div class="reviews__boxes">
 						<div class="reviews__box">
 							<div class="reviews__box-img">
@@ -356,12 +709,13 @@
 				</div>
 			</section>
 		</main>
-		<footer class="footer">
+		<footer class="footer" id="contact">
 			<div class="wrapper">
 				<div class="footer__boxes">
 					<div class="footer__box">
 						<!-- <h3 class="footer__box-title"><img src="./img/logo_black.jpg" alt=""> Kontakt</h3> -->
-						<h3 class="footer__box-title">Kontakt</h3>
+						<h3 class="footer__box-title carts__title">Kontakt</h3>
+						<div class="underline"></div>
 						
 						<div class="container">
 							<div class="row text-center contact-us">
@@ -425,6 +779,11 @@
 			<p class="footer__bottom-text"> &copy; <span class="footer__year"></span> Poniat Design </p>
 		</footer>
 		<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+		crossorigin="anonymous"
+	></script>
+		<script
 			type="text/javascript"
 			src="//code.jquery.com/jquery-1.11.0.min.js"
 		></script>
@@ -436,6 +795,7 @@
 			type="text/javascript"
 			src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
 		></script>
+		<script src="js/slicksettings.js"></script>
 		<script src="js/slick.js"></script>
 		<script src="js/script.js"></script>
 	</body>
