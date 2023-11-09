@@ -269,7 +269,7 @@ body {
   cursor: pointer;
 }
 .nav__desktop--link-box:hover > a {
-  color: #00c3ae;
+  color: #e2da00;
 }
 .nav__desktop--link-box a {
   font-size: 1.4rem;
